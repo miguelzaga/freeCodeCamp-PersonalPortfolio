@@ -26,27 +26,42 @@ h2 {
 #navbar {
     top: 0;
     position: fixed;
-    background-color: var(--darkTeal);
-    color: white;
+    font-size: 1.5em;
+    background-color: var(--yellow);
+    color: black;
     height: 60px;
     width: 100%;
     display: flex;
     align-items: center;
 }
 
-#navbar ul {
+#navbar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* height: 100%; */
     width: 100%;
     display: flex;
     justify-content: space-around;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    /* margin: auto; */
 }
 
+#navbar li {
+    padding: 15px;
+    transition: all .5s ;
+}
 
-#navbar ul li a {
-    color: inherit;
+#navbar li:hover, #navbar li:active{
+    background-color: var(--darkTeal);
+    color: white;
+}
+
+#navbar a {
+    width: 100%;
+    height: 100%;
     text-decoration: none;
+    color: inherit;
+
 }
 
 section {
@@ -82,13 +97,19 @@ section {
     background-color: var(--lightTeal);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 80%;
+    max-width: 360px;
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
 }
 
+.project-tile h3 {
+    margin-top: 0;
+}
+
 .project-img {
-    width: 100%;
+    width: 80%;
+    height: 80%;
 }
 
 #contact {
@@ -99,5 +120,41 @@ section {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
 
+}
+.contact-link {
+    font-size: 80px;
+    margin: 20px;
+}
+.contact-link, .contact-link a,.contact-link a:visited {
+    color: var(--darkTeal);
+}
+
+.contact-link a:hover {
+    transition: all .3s;
+    color: var(--yellow);
+}
+
+@media (min-width: 768px) {
+    #navbar ul {
+        justify-content: right;
+    }
+
+    .project-organizer {
+        margin-top: 30px;
+        display:    flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .project-tile {
+        width: 360px;
+        height: 360px;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    
 }
