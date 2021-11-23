@@ -78,13 +78,17 @@ section {
     background-color: var(--teal);
 }
 
-.project-tile{
+.project-tile {
     background-color: var(--lightTeal);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    width: 200px;
+    width: 80%;
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
+}
+
+.project-img {
+    width: 100%;
 }
 
 #contact {
