@@ -1,0 +1,99 @@
+:root {
+    --darkTeal: #009DAE;
+    --teal: #71DFE7;
+    --lightTeal: #C2FFF9;
+    --yellow: #FFE652
+}
+
+* {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+#navbar {
+    top: 0;
+    position: fixed;
+    background-color: var(--darkTeal);
+    color: white;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+#navbar ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+section {
+    padding: 0;
+    padding-top: 60px;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#welcome-section {
+    background-color: var(--lightTeal);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#welcome-section h1 {
+    margin-bottom: 0;
+}
+
+#welcome-section h2 {
+    font-style: italic;
+    font-weight: 100;
+}
+
+#projects {
+    background-color: var(--teal);
+}
+
+.project-tile{
+    background-color: var(--lightTeal);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+#contact {
+    background-color: var(--lightTeal);
+}
+
+#contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
